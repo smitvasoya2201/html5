@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One Advanced HTML Practice Project</title>
+</head>
+<body>
+
+    <!-- 1. Semantic Layout & Navigation -->
+    <header style="background-color: #f0f0f0; padding: 15px;">
+        <h1>🚀 Smart Learning Dashboard</h1>
+        <p>A single project practicing <em>all</em> HTML tags simultaneously.</p>
+        <nav>
+            <a href="#quick-stats">Stats</a> | 
+            <a href="#media-gallery">Media Hub</a> | 
+            <a href="#data-zone">Data Table</a> | 
+            <a href="#user-portal">User Portal</a> | 
+            <a href="#interactive-tags">Advanced Tags</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. Mixed Formatting & Quick Stats Section -->
+        <section id="quick-stats">
+            <h2>📊 Course Overview & Text Formatting</h2>
+            <p>Welcome! Today we are learning <strong>HTML5 development</strong>. Keep practicing <mark>every day</mark>.</p>
+            
+            <p>Important Formula: <var>Learning Rate</var> = Code<sup>2</sup> &times; <sub>TimeSpent</sub></p>
+            
+            <p>Update Log: <del>Old syllabus v1.0</del> &rarr; <ins>New syllabus v2.0</ins></p>
+            
+            <fieldset>
+                <legend>💡 Developer Quote of the Day</legend>
+                <blockquote cite="https://example.com">
+                    "First, solve the problem. Then, write the code." — <cite>John Johnson</cite>
+                </blockquote>
+            </fieldset>
+        </section>
+
+        <hr>
+
+        <!-- 3. Mixed Lists & Details Accordion -->
+        <section id="interactive-tags">
+            <h2>🛠️ Syllabus Breakdown & Interactive Elements</h2>
+            
+            <details>
+                <summary><b>Click to expand Module 1 Details</b></summary>
+                <p>Inside this interactive accordion, here is a nested layout:</p>
+                <ul>
+                    <li>Front-end Basics
+                        <ol>
+                            <li>HTML Semantics</li>
+                            <li>Form Validations</li>
+                        </ol>
+                    </li>
+                    <li>Resource Links: <a href="https://mozilla.org" target="_blank">Visit MDN Web Docs</a></li>
+                </ul>
+            </details>
+
+            <br>
+            <label for="course-progress">Overall Course Completion Progress:</label><br>
+            <progress id="course-progress" value="70" max="100">70%</progress> (70%)
+            
+            <br><br>
+            <label for="disk-space">Server Memory Capacity Load:</label><br>
+            <meter id="disk-space" value="0.6">60%</meter> (60% Optimized)
+        </section>
+
+        <hr>
+
+        <!-- 4. Media Hub Section -->
+        <section id="media-gallery">
+            <h2>🎵 Integrated Media Gallery</h2>
+            
+            <figure style="display: inline-block; margin: 10px;">
+                <img src="https://picsum.photos" alt="Random tech illustration study concept" width="200" height="150">
+                <figcaption>Fig 1. Active Developer Workspace Image.</figcaption>
+            </figure>
+
+            <div>
+                <h3>Audio Lecture Preview</h3>
+                <audio controls>
+                    <source src="https://w3schools.com" type="audio/mpeg">
+                    Your browser does not support audio playback.
+                </audio>
+            </div>
+
+            <div>
+                <h3>Video Walkthrough</h3>
+                <video width="320" height="180" controls>
+                    <source src="https://w3schools.com" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- 5. Advanced Table Layout -->
+        <section id="data-zone">
+            <h2>📅 Student Enrollment Matrix</h2>
+            <table border="2" cellpadding="5" cellspacing="0">
+                <caption>Active Batch Matrix</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Student ID</th>
+                        <th rowspan="2">Full Name</th>
+                        <th colspan="2">Enrolled Modules</th>
+                    </tr>
+                    <tr>
+                        <th>Primary Track</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>#0921</code></td>
+                        <td>Aman Sharma</td>
+                        <td>Full Stack Engineering</td>
+                        <td><mark>Active</mark></td>
+                    </tr>
+                    <tr>
+                        <td><code>#0925</code></td>
+                        <td>Priya Patel</td>
+                        <td>UI/UX Designing</td>
+                        <td><i>On Leave</i></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Class Population:</td>
+                        <td><b>2 Active</b></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- 6. Ultimate Interactive Input Portal -->
+        <section id="user-portal">
+            <h2>📝 Admission & Feedback Submission Portal</h2>
+            <form action="#" method="post">
+                
+                <fieldset>
+                    <legend>Personal Credentials</legend>
+                    
+                    <label for="user-name">Candidate Name:</label>
+                    <input type="text" id="user-name" name="userName" placeholder="John Doe" required>
+                    <br><br>
+
+                    <label for="user-email">Email Address:</label>
+                    <input type="email" id="user-email" name="userEmail" required>
+                    <br><br>
+
+                    <label for="birth-date">Select Date of Birth:</label>
+                    <input type="date" id="birth-date" name="dob">
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Preferences & Track Customization</legend>
+                    
+                    <label>Select Your Gender Orientation:</label><br>
+                    <input type="radio" id="g-male" name="gender" value="m">
+                    <label for="g-male">Male</label>
+                    <input type="radio" id="g-female" name="gender" value="f">
+                    <label for="g-female">Female</label>
+                    <br><br>
+
+                    <label for="choose-track">Choose Core Specialization:</label>
+                    <input list="tracks" id="choose-track" name="chosenTrack">
+                    <datalist id="tracks">
+                        <option value="Web Development (HTML/CSS/JS)">
+                        <option value="Data Science & Python">
+                        <option value="Cyber Security Systems">
+                        <option value="Cloud Computing (AWS)">
+                    </datalist>
+                    <br><br>
+
+                    <label>Opt-in Skills Add-ons:</label><br>
+                    <input type="checkbox" id="add-git" name="addons" value="git">
+                    <label for="add-git">Version Control (Git)</label>
+                    <input type="checkbox" id="add-seo" name="addons" value="seo">
+                    <label for="add-seo">SEO Fundamentals</label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>File Submission & Color Theme</legend>
+                    <label for="user-avatar">Upload Profile Picture Attachment:</label>
+                    <input type="file" id="user-avatar" name="avatarFile">
+                    <br><br>
+                    
+                    <label for="fav-color">Pick Workspace Primary Theme Accent:</label>
+                    <input type="color" id="fav-color" name="themeColor" value="#007bff">
+                </fieldset>
+
+                <br>
+
+                <label for="user-notes">Write Comprehensive Statement of Purpose:</label><br>
+                <textarea id="user-notes" name="sopNotes" rows="5" cols="45" placeholder="Tell us about your learning goals..."></textarea>
+                
+                <br><br>
+                
+                <button type="submit">🚀 Process Enrollment</button>
+                <button type="reset">🔄 Clear Entry Form</button>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- 7. Footer Layout -->
+    <footer style="text-align: center; padding: 10px; background-color: #333; color: white;">
+        <p>&copy; 2026 Core HTML Engineering Lab. All Elements Validated.</p>
+        <p><small>This testing layout follows strict semantic web standards.</small></p>
+    </footer>
+
+</body>
+</html>
